@@ -1,0 +1,162 @@
+:root {
+  --bs-primary: #1a73e8;
+  --bs-secondary: #fbbc04;
+  --bs-success: #34a853;
+  --bs-danger: #ea4335;
+  --bs-warning: #fbbc04;
+  --bs-info: #4285f4;
+  --bs-light: #f1f3f4;
+  --bs-dark: #202124;
+
+  --bs-body-bg: #f5f7fa; /* gris muy suave, casi blanco pero cálido */
+  --bs-body-color: #202124;
+
+  --bs-border-color: #d1d9e6;
+  --bs-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo general del body y root */
+body, #root {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 2rem;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--bs-primary));
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: var(--bs-dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Tarjetas */
+.card {
+  padding: 2em;
+  box-shadow: var(--bs-box-shadow);
+  border-radius: 10px;
+  background-color: var(--bs-light);
+  margin-bottom: 2rem;
+  border: 1px solid var(--bs-border-color);
+}
+
+/* Botones primarios */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: none;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+}
+.btn-primary:hover {
+  background-color: #155ab6;
+}
+
+/* Botones secundarios */
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border: none;
+  color: #202124;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #c69300;
+}
+
+/* Inputs y formularios */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid var(--bs-border-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--bs-dark);
+  background-color: #fff;
+}
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 5px var(--bs-primary);
+  outline: none;
+}
+
+/* Listas y tablas */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+  margin-top: 1rem;
+}
+.table thead tr th {
+  border-bottom: 2px solid var(--bs-primary);
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+.table tbody tr {
+  background-color: var(--bs-light);
+  box-shadow: var(--bs-box-shadow);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.table tbody tr:hover {
+  background-color: #e7f0ff;
+}
+.table tbody tr td {
+  vertical-align: middle;
+  padding: 1rem;
+  border: none;
+}
+
+/* Lista hover para filas */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #f0f4ff;
+}
+
+/* Contenedores responsivos */
+.container {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Alineaciones */
+.text-left {
+  text-align: left;
+}
+
+/* Formularios con fondo blanco para resaltar */
+form {
+  background-color: #fff;  /* blanco puro */
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--bs-box-shadow);
+  border: 1px solid var(--bs-border-color);
+  margin-bottom: 2rem;
+}
