@@ -52,7 +52,7 @@ Este proyecto es una aplicación fullstack desarrollada en JavaScript que permit
     http://localhost:3000
 
 💻 Frontend
-1. Navegar a la carpeta 
+1. Abri otra consola y Navega a la carpeta 
     ```bash
     cd`frontend/`:
 
